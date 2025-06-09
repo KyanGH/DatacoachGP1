@@ -1,0 +1,17 @@
+1. Clone the repo: use this command in terminal/CMD
+git clone https://github.com/KyanGH/DatacoachGP1.git
+
+2. Create new branch: this is used to avoid conflicts
+git checkout -b feature-plot-survivors
+
+# Note: the name of the branch doesn’t have to be feature-plot-survivors, instead use a suitable name for the task you did.
+
+3. Make changes: run the following commands
+git add .
+git commit -m "Add plot of survivor age distribution"
+git push origin feature-plot-survivors
+
+# Note: the commit message is just an example, again describe the task you did.
+
+4. Open a pull request on GitHub to merge changes into main
+Note: let me know if you need opening a pull request, it’s done using the website.
