@@ -25,3 +25,17 @@ plt.xlabel('Age')
 plt.ylabel('Number of survivors')
 plt.title('Age Distribution of Survivors')
 plt.show()
+
+# Plot for survivors based on Gender
+genders_survived = data_np[data_np[:, 1] == 1, 3]
+genders = np.array(['Male','Female'])
+male_count = np.sum(genders_survived == 'Male')
+female_count = np.sum(genders_survived == 'female')
+survivors_count = [male_count, female_count]
+plt.bar(genders, survivors_count, color = ['red', 'blue'], edgecolor='black', width=0.2)
+plt.xlabel('Gender')
+plt.ylabel('Number of survivors')
+plt.title('Gender vs Survival')
+plt.show()
+print(genders_survived.shape)
+print(genders_survived[:10])
