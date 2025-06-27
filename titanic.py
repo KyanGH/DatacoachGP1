@@ -130,19 +130,3 @@ plt.ylabel("Cost")
 plt.title("Cost Function over Iterations")
 plt.grid(True)
 plt.show()
-
-<<<<<<< HEAD
-# Example user input:
-# Pclass=3, Sex=male, Age=22, SibSp=0, Parch=0, Fare=7.25, Embarked=3
-user_raw = np.array([[3, 0, 22, 0, 0, 7.25, 2]])  # mapped 'Sex' and 'Embarked'
-
-# Add bias term
-user_input = np.hstack([np.ones((user_raw.shape[0], 1)), user_raw])
-
-# Predict probability and class
-prob = sigmoid(user_input @ theta)[0][0]
-prediction = int(prob >= 0.5)
-
-print(f"\nUser Input Prediction:")
-print(f"Survival probability: {prob:.2f}")
-print("Prediction:", "Survived" if prediction else "Did not survive")
