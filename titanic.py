@@ -131,6 +131,7 @@ plt.title("Cost Function over Iterations")
 plt.grid(True)
 plt.show()
 
+<<<<<<< HEAD
 # Example user input:
 # Pclass=3, Sex=male, Age=22, SibSp=0, Parch=0, Fare=7.25, Embarked=3
 user_raw = np.array([[3, 0, 22, 0, 0, 7.25, 2]])  # mapped 'Sex' and 'Embarked'
